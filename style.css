@@ -1,7 +1,7 @@
 :root {
   --bg-dark: #0a0a0f;
-  --card-bg: rgba(18, 18, 28, 0.75);
-  --card-border: rgba(255, 77, 0, 0.25);
+  --card-bg: rgba(18, 18, 28, 0.85);
+  --card-border: rgba(255, 85, 0, 0.25);
   --primary-orange: #ff5500;
   --accent-gold: #ffb700;
   --neon-red: #ff1e56;
@@ -59,7 +59,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 2rem;
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -108,7 +108,7 @@ body {
 
 .hero h1 {
   font-family: var(--font-heading);
-  font-size: 2.3rem;
+  font-size: 2.2rem;
   font-weight: 900;
   letter-spacing: 1.5px;
   margin-bottom: 0.5rem;
@@ -118,7 +118,6 @@ body {
   background: linear-gradient(90deg, #ff5500, #ffb700, #ff1e56);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 25px rgba(255, 85, 0, 0.4);
 }
 
 .subtitle {
@@ -192,8 +191,8 @@ body {
 
 select {
   width: 100%;
-  background: rgba(10, 10, 18, 0.9);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: #11111a;
+  border: 1px solid rgba(255, 255, 255, 0.15);
   color: #fff;
   padding: 0.75rem 1rem;
   border-radius: 8px;
@@ -201,13 +200,12 @@ select {
   font-size: 1.05rem;
   font-weight: 600;
   outline: none;
-  transition: all 0.2s ease;
   cursor: pointer;
 }
 
 select:focus {
   border-color: var(--primary-orange);
-  box-shadow: 0 0 12px rgba(255, 85, 0, 0.35);
+  box-shadow: 0 0 10px rgba(255, 85, 0, 0.3);
 }
 
 /* Button */
@@ -227,7 +225,7 @@ select:focus {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  transition: all 0.25s ease;
+  transition: transform 0.2s, box-shadow 0.2s;
   box-shadow: 0 6px 20px rgba(255, 85, 0, 0.4);
 }
 
@@ -291,14 +289,14 @@ select:focus {
 /* Sensi Grid */
 .sensi-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.2rem;
   margin-bottom: 2rem;
 }
 
 .sensi-box {
-  background: rgba(10, 10, 18, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(10, 10, 18, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   padding: 1rem 1.25rem;
   border-radius: 10px;
 }
@@ -333,7 +331,7 @@ select:focus {
   height: 100%;
   background: linear-gradient(90deg, #ff5500, #ffb700);
   border-radius: 4px;
-  transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: width 0.5s ease-out;
 }
 
 /* Extra Specs */
@@ -416,7 +414,7 @@ select:focus {
 
 @media (max-width: 600px) {
   .hero h1 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
   .glass-card {
     padding: 1.25rem;
