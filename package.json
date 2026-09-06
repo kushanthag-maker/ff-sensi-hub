@@ -1,16 +1,13 @@
 {
   "name": "ff-sensi-hub",
   "version": "1.0.0",
-  "description": "Free Fire Headshot Sensitivity & DPI Generator Web App",
+  "private": true,
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
-  "dependencies": {
-    "lucide": "^0.344.0"
-  },
   "devDependencies": {
-    "vite": "^5.1.4"
+    "vite": "^5.2.0"
   }
 }
