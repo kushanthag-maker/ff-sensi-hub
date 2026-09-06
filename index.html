@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FF SENSI HUB ⚡ Free Fire Headshot Sensitivity Generator</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="background-glow"></div>
+  <div class="grid-overlay"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <i class="fa-solid fa-crosshairs fa-spin-pulse"></i>
+      <span>FF<span class="highlight">SENSI</span>HUB</span>
+    </div>
+    <div class="badge">PRO VERSION 2025</div>
+  </header>
+
+  <main class="container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>AUTO HEADSHOT <span class="glow-text">SENSI GENERATOR</span></h1>
+      <p class="subtitle">Get the best 100% working one-tap sensitivity, DPI & fire button size customized for your device!</p>
+    </section>
+
+    <!-- Generator Card -->
+    <div class="glass-card main-card">
+      <div class="card-header">
+        <i class="fa-solid fa-sliders"></i>
+        <h2>Select Your Device Spec</h2>
+      </div>
+
+      <div class="form-grid">
+        <!-- Brand Selection -->
+        <div class="input-group">
+          <label><i class="fa-solid fa-mobile-screen"></i> Device Brand</label>
+          <select id="brandSelect">
+            <option value="samsung">Samsung Galaxy</option>
+            <option value="xiaomi">Xiaomi / Redmi / POCO</option>
+            <option value="apple">iPhone / iPad</option>
+            <option value="realme">Realme</option>
+            <option value="vivo">Vivo / iQOO</option>
+            <option value="oppo">OPPO / OnePlus</option>
+            <option value="infinix">Infinix / Tecno</option>
+            <option value="pc">PC (BlueStacks / MSI / LDPlayer)</option>
+          </select>
+        </div>
+
+        <!-- RAM Selection -->
+        <div class="input-group">
+          <label><i class="fa-solid fa-microchip"></i> RAM Size</label>
+          <select id="ramSelect">
+            <option value="2gb">2 GB RAM (Low End)</option>
+            <option value="3gb">3 GB RAM</option>
+            <option value="4gb" selected>4 GB RAM (Medium)</option>
+            <option value="6gb">6 GB RAM</option>
+            <option value="8gb">8 GB / 12 GB RAM (High End)</option>
+            <option value="pc">PC 16GB+ RAM</option>
+          </select>
+        </div>
+
+        <!-- Playstyle -->
+        <div class="input-group">
+          <label><i class="fa-solid fa-gun"></i> Gun / Play Style</label>
+          <select id="playStyleSelect">
+            <option value="onetap">One-Tap (Desert Eagle / Shotguns)</option>
+            <option value="allround" selected>All-Round (M4A1, MP40, Shotgun)</option>
+            <option value="smg">Rush / SMG Spray (MP40, UMP)</option>
+            <option value="sniper">Sniper God (AWM, M82B)</option>
+          </select>
+        </div>
+
+        <!-- Refresh Rate -->
+        <div class="input-group">
+          <label><i class="fa-solid fa-gauge-high"></i> Screen Refresh Rate</label>
+          <select id="refreshRateSelect">
+            <option value="60hz">60 Hz Standard</option>
+            <option value="90hz" selected>90 Hz Smooth</option>
+            <option value="120hz">120 Hz / 144 Hz Ultra</option>
+          </select>
+        </div>
+      </div>
+
+      <button id="generateBtn" class="primary-btn">
+        <i class="fa-solid fa-bolt"></i> GENERATE PERFECT SENSI
+      </button>
+    </div>
+
+    <!-- Output Section -->
+    <div id="resultSection" class="result-section">
+      <div class="glass-card sensi-results">
+        <div class="result-top">
+          <div>
+            <span class="device-tag" id="resultDeviceTag">SAMSUNG • 4GB RAM</span>
+            <h3 class="result-title">Optimized Sensi Settings</h3>
+          </div>
+          <button id="copyAllBtn" class="copy-btn">
+            <i class="fa-regular fa-copy"></i> Copy All
+          </button>
+        </div>
+
+        <!-- Sensi Sliders Output -->
+        <div class="sensi-grid">
+          <div class="sensi-box">
+            <div class="sensi-info">
+              <span>General (Look Around)</span>
+              <strong id="valGeneral">98</strong>
+            </div>
+            <div class="bar-container">
+              <div class="bar-fill" id="barGeneral" style="width: 98%;"></div>
+            </div>
+          </div>
+
+          <div class="sensi-box">
+            <div class="sensi-info">
+              <span>Red Dot</span>
+              <strong id="valRedDot">95</strong>
+            </div>
+            <div class="bar-container">
+              <div class="bar-fill" id="barRedDot" style="width: 95%;"></div>
+            </div>
+          </div>
+
+          <div class="sensi-box">
+            <div class="sensi-info">
+              <span>2X Scope</span>
+              <strong id="val2x">92</strong>
+            </div>
+            <div class="bar-container">
+              <div class="bar-fill" id="bar2x" style="width: 92%;"></div>
+            </div>
+          </div>
+
+          <div class="sensi-box">
+            <div class="sensi-info">
+              <span>4X Scope</span>
+              <strong id="val4x">88</strong>
+            </div>
+            <div class="bar-container">
+              <div class="bar-fill" id="bar4x" style="width: 88%;"></div>
+            </div>
+          </div>
+
+          <div class="sensi-box">
+            <div class="sensi-info">
+              <span>Sniper Scope</span>
+              <strong id="valSniper">62</strong>
+            </div>
+            <div class="bar-container">
+              <div class="bar-fill" id="barSniper" style="width: 62%;"></div>
+            </div>
+          </div>
+
+          <div class="sensi-box">
+            <div class="sensi-info">
+              <span>Free Look</span>
+              <strong id="valFreeLook">75</strong>
+            </div>
+            <div class="bar-container">
+              <div class="bar-fill" id="barFreeLook" style="width: 75%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Extra Pro Specs -->
+        <div class="extra-specs">
+          <div class="spec-card">
+            <i class="fa-solid fa-bullseye"></i>
+            <div>
+              <span class="label">Fire Button Size</span>
+              <strong id="valFireBtn">45%</strong>
+            </div>
+          </div>
+          <div class="spec-card">
+            <i class="fa-solid fa-display"></i>
+            <div>
+              <span class="label">Recommended DPI</span>
+              <strong id="valDpi">480 DPI</strong>
+            </div>
+          </div>
+          <div class="spec-card">
+            <i class="fa-solid fa-hand-pointer"></i>
+            <div>
+              <span class="label">Drag Style</span>
+              <strong id="valDragStyle">Straight Up Fast Drag</strong>
+            </div>
+          </div>
+          <div class="spec-card">
+            <i class="fa-solid fa-arrows-spin"></i>
+            <div>
+              <span class="label">Pointer Speed</span>
+              <strong id="valPointerSpeed">Max + Fast</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Secret Pro Tips -->
+      <div class="glass-card tips-card">
+        <h3><i class="fa-solid fa-fire text-orange"></i> One-Tap Pro Drag Secret Tips</h3>
+        <ul class="tips-list">
+          <li><strong>🎯 Placement Trick:</strong> Keep your crosshair at enemy chest or shoulder level before dragging up.</li>
+          <li><strong>🔥 Rotation Drag:</strong> For close-range shotgun fights, drag the fire button in a 'J' or 'U' shape towards the enemy head.</li>
+          <li><strong>⚡ Quick Switch:</strong> Fire & instantly hit the Quick Weapon Switch button to reset the gun recoil & aim bloom.</li>
+          <li><strong>🛡️ DPI Caution:</strong> Never increase your phone DPI by more than +100 from default (Default + 60 to 90 is safest).</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>⚡ Powered by FF Sensi Engine 2025 • Alien X Agent</p>
+    <p class="disclaimer">Free Fire is a registered trademark of Garena. This tool is a fan-made helper utility.</p>
+  </footer>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
