@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FF SENSI HUB ⚡ Free Fire Headshot Sensitivity Generator</title>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
   <div class="background-glow"></div>
@@ -20,31 +20,31 @@
       <i class="fa-solid fa-crosshairs fa-spin-pulse"></i>
       <span>FF<span class="highlight">SENSI</span>HUB</span>
     </div>
-    <div class="badge">PRO VERSION 2025</div>
+    <div class="badge">PRO 2025</div>
   </header>
 
   <main class="container">
     <!-- Hero Section -->
     <section class="hero">
       <h1>AUTO HEADSHOT <span class="glow-text">SENSI GENERATOR</span></h1>
-      <p class="subtitle">Get the best 100% working one-tap sensitivity, DPI & fire button size customized for your device!</p>
+      <p class="subtitle">Get the best 100% working one-tap sensitivity, DPI & fire button size customized for your phone!</p>
     </section>
 
     <!-- Generator Card -->
     <div class="glass-card main-card">
       <div class="card-header">
         <i class="fa-solid fa-sliders"></i>
-        <h2>Select Your Device Spec</h2>
+        <h2>Select Your Device Specifications</h2>
       </div>
 
       <div class="form-grid">
         <!-- Brand Selection -->
         <div class="input-group">
-          <label><i class="fa-solid fa-mobile-screen"></i> Device Brand</label>
+          <label for="brandSelect"><i class="fa-solid fa-mobile-screen"></i> Device Brand</label>
           <select id="brandSelect">
             <option value="samsung">Samsung Galaxy</option>
             <option value="xiaomi">Xiaomi / Redmi / POCO</option>
-            <option value="apple">iPhone / iPad</option>
+            <option value="apple">iPhone / iPad (iOS)</option>
             <option value="realme">Realme</option>
             <option value="vivo">Vivo / iQOO</option>
             <option value="oppo">OPPO / OnePlus</option>
@@ -55,7 +55,7 @@
 
         <!-- RAM Selection -->
         <div class="input-group">
-          <label><i class="fa-solid fa-microchip"></i> RAM Size</label>
+          <label for="ramSelect"><i class="fa-solid fa-microchip"></i> RAM Size</label>
           <select id="ramSelect">
             <option value="2gb">2 GB RAM (Low End)</option>
             <option value="3gb">3 GB RAM</option>
@@ -68,7 +68,7 @@
 
         <!-- Playstyle -->
         <div class="input-group">
-          <label><i class="fa-solid fa-gun"></i> Gun / Play Style</label>
+          <label for="playStyleSelect"><i class="fa-solid fa-gun"></i> Gun / Play Style</label>
           <select id="playStyleSelect">
             <option value="onetap">One-Tap (Desert Eagle / Shotguns)</option>
             <option value="allround" selected>All-Round (M4A1, MP40, Shotgun)</option>
@@ -79,7 +79,7 @@
 
         <!-- Refresh Rate -->
         <div class="input-group">
-          <label><i class="fa-solid fa-gauge-high"></i> Screen Refresh Rate</label>
+          <label for="refreshRateSelect"><i class="fa-solid fa-gauge-high"></i> Screen Refresh Rate</label>
           <select id="refreshRateSelect">
             <option value="60hz">60 Hz Standard</option>
             <option value="90hz" selected>90 Hz Smooth</option>
@@ -88,7 +88,7 @@
         </div>
       </div>
 
-      <button id="generateBtn" class="primary-btn">
+      <button id="generateBtn" class="primary-btn" type="button">
         <i class="fa-solid fa-bolt"></i> GENERATE PERFECT SENSI
       </button>
     </div>
@@ -101,7 +101,7 @@
             <span class="device-tag" id="resultDeviceTag">SAMSUNG • 4GB RAM</span>
             <h3 class="result-title">Optimized Sensi Settings</h3>
           </div>
-          <button id="copyAllBtn" class="copy-btn">
+          <button id="copyAllBtn" class="copy-btn" type="button">
             <i class="fa-regular fa-copy"></i> Copy All
           </button>
         </div>
@@ -175,14 +175,14 @@
             <i class="fa-solid fa-bullseye"></i>
             <div>
               <span class="label">Fire Button Size</span>
-              <strong id="valFireBtn">45%</strong>
+              <strong id="valFireBtn">48%</strong>
             </div>
           </div>
           <div class="spec-card">
             <i class="fa-solid fa-display"></i>
             <div>
               <span class="label">Recommended DPI</span>
-              <strong id="valDpi">480 DPI</strong>
+              <strong id="valDpi">500 DPI</strong>
             </div>
           </div>
           <div class="spec-card">
@@ -216,7 +216,7 @@
   </main>
 
   <footer class="footer">
-    <p>⚡ Powered by FF Sensi Engine 2025 • Alien X Agent</p>
+    <p>⚡ Powered by FF Sensi Hub 2025 • Alien X Agent</p>
     <p class="disclaimer">Free Fire is a registered trademark of Garena. This tool is a fan-made helper utility.</p>
   </footer>
 
